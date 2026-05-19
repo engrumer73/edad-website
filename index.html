@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EDAD Advertising — Amazon PPC & Growth Partner</title>
+<meta name="description" content="EDAD Advertising LLC — Performance-driven Amazon PPC management for ambitious brands. Lower ACoS. Higher TACoS efficiency. Real growth." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-elev: #111111;
+    --ink: #f5f1e8;
+    --ink-muted: #8a8478;
+    --gold: #c9a961;
+    --gold-bright: #e6c97a;
+    --line: rgba(245, 241, 232, 0.08);
+    --line-strong: rgba(245, 241, 232, 0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Noise overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: overlay;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 20px 0;
+    backdrop-filter: blur(20px);
+    background: rgba(10, 10, 10, 0.7);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    transition: opacity 0.3s;
+  }
+
+  .logo:hover { opacity: 0.8; }
+
+  .logo span {
+    color: var(--gold);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--bg);
+    padding: 10px 22px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    letter-spacing: 0.03em;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold-bright);
+    transform: translateY(-1px);
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 100px;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(201, 169, 97, 0.12) 0%, transparent 60%);
+    z-index: 0;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(48px, 7vw, 96px);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.15s forwards;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+
+  .hero-sub {
+    font-size: 20px;
+    color: var(--ink-muted);
+    max-width: 580px;
+    margin-bottom: 48px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.3s forwards;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.45s forwards;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--bg);
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-bright);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.25);
+  }
+
+  .btn-ghost {
+    color: var(--ink);
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid var(--line-strong);
+    transition: all 0.3s;
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* Stats strip */
+  .stats {
+    margin-top: 100px;
+    padding: 48px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.6s forwards;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .stat-item {
+    border-left: 1px solid var(--line);
+    padding-left: 24px;
+  }
+
+  .stat-item:first-child { border-left: none; padding-left: 0; }
+
+  .stat-number {
+    font-family: 'Fraunces', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--ink-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Sections */
+  section {
+    padding: 120px 0;
+    position: relative;
+  }
+
+  .section-header {
+    margin-bottom: 80px;
+    max-width: 720px;
+  }
+
+  .section-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+
+  .section-desc {
+    font-size: 18px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .service-card {
+    background: var(--bg);
+    padding: 48px;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card:hover {
+    background: var(--bg-elev);
+  }
+
+  .service-card:hover .service-num {
+    color: var(--gold);
+  }
+
+  .service-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-bottom: 24px;
+    transition: color 0.3s;
+    letter-spacing: 0.1em;
+  }
+
+  .service-title {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .service-desc {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-list li {
+    font-size: 14px;
+    color: var(--ink);
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .service-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  /* Process */
+  .process {
+    background: var(--bg-elev);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+  }
+
+  .process-step {
+    position: relative;
+    padding-top: 32px;
+    border-top: 1px solid var(--line-strong);
+  }
+
+  .process-num {
+    font-family: 'Fraunces', serif;
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+  }
+
+  .process-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .process-desc {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+
+  /* Why us */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .why-features {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .why-item {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .why-item:last-child { border-bottom: none; }
+
+  .why-item h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .why-item p {
+    color: var(--ink-muted);
+    font-size: 15px;
+  }
+
+  .visual-card {
+    aspect-ratio: 4/5;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border: 1px solid var(--line-strong);
+    border-radius: 4px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .visual-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(201, 169, 97, 0.15) 0%, transparent 50%);
+  }
+
+  .visual-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .visual-quote {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 1.3;
+    position: relative;
+    font-weight: 300;
+  }
+
+  .visual-quote em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .visual-attr {
+    font-size: 13px;
+    color: var(--ink-muted);
+    position: relative;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+
+  /* CTA section */
+  .cta {
+    text-align: center;
+    padding: 160px 0;
+    position: relative;
+  }
+
+  .cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(201, 169, 97, 0.08) 0%, transparent 60%);
+    z-index: 0;
+  }
+
+  .cta-content { position: relative; z-index: 1; }
+
+  .cta h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 1.05;
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+  }
+
+  .cta h2 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+
+  .cta p {
+    font-size: 20px;
+    color: var(--ink-muted);
+    max-width: 560px;
+    margin: 0 auto 48px;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 60px 0 40px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .footer-brand p {
+    color: var(--ink-muted);
+    font-size: 14px;
+    margin-top: 16px;
+    max-width: 320px;
+  }
+
+  .footer-col h5 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-col a {
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+
+  .footer-col a:hover { color: var(--gold); }
+
+  .footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .nav-links { display: none; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .stat-item { border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
+    .stat-item:first-child, .stat-item:nth-child(2) { border-top: none; padding-top: 0; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-card { padding: 32px; }
+    .process-grid { grid-template-columns: 1fr; gap: 24px; }
+    .why-grid { grid-template-columns: 1fr; gap: 48px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    section { padding: 80px 0; }
+    .hero { padding: 120px 0 60px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="logo">EDAD <span>Advertising</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#why">Why EDAD</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Amazon Advertising Specialists</div>
+        <h1>Performance that pays for itself. <em>Predictably.</em></h1>
+        <p class="hero-sub">EDAD Advertising partners with ambitious Amazon brands to build PPC engines that scale revenue without burning margin. Strategy, execution, and reporting — handled.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Get a Free Audit</a>
+          <a href="#services" class="btn-ghost">See Services →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">$12M+</div>
+          <div class="stat-label">Ad Spend Managed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">38%</div>
+          <div class="stat-label">Avg. ACoS Reduction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2.4x</div>
+          <div class="stat-label">Avg. Revenue Growth</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24</div>
+          <div class="stat-label">Active Accounts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What We Do</span>
+      <h2 class="section-title">Built for brands that want <em>more than reports.</em></h2>
+      <p class="section-desc">We don't sell dashboards. We build advertising systems that compound, with weekly action and quarterly strategy that ties back to your P&L.</p>
+    </div>
+
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-num">01 / PPC</div>
+        <h3 class="service-title">Amazon PPC Management</h3>
+        <p class="service-desc">Full-funnel Sponsored Products, Brands, and Display management with disciplined bid logic and structured keyword segregation.</p>
+        <ul class="service-list">
+          <li>Campaign architecture & segmentation</li>
+          <li>Search term harvesting & negation</li>
+          <li>Bid optimization & dayparting</li>
+          <li>TACoS-led budget allocation</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02 / DSP</div>
+        <h3 class="service-title">Amazon DSP & Retargeting</h3>
+        <p class="service-desc">Programmatic display that fills the gaps PPC can't reach — competitor conquest, retargeting, and audience-led growth.</p>
+        <ul class="service-list">
+          <li>Custom audience building</li>
+          <li>Competitor conquest campaigns</li>
+          <li>Retargeting funnels</li>
+          <li>Brand-halo measurement</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03 / Listings</div>
+        <h3 class="service-title">Listing Optimization</h3>
+        <p class="service-desc">Conversion-first listing builds with keyword strategy, A+ content, and image hierarchy designed to lift CVR before scaling spend.</p>
+        <ul class="service-list">
+          <li>Keyword research & indexing</li>
+          <li>Title, bullets, description copy</li>
+          <li>A+ content & brand stores</li>
+          <li>Image strategy briefs</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04 / Strategy</div>
+        <h3 class="service-title">Growth Consulting</h3>
+        <p class="service-desc">Quarterly forecasting, launch planning, and account audits that connect advertising decisions to business outcomes.</p>
+        <ul class="service-list">
+          <li>Account health audits</li>
+          <li>Quarterly forecasting</li>
+          <li>Launch & expansion strategy</li>
+          <li>Executive reporting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">How We Work</span>
+      <h2 class="section-title">A process built for <em>compounding wins.</em></h2>
+      <p class="section-desc">No 90-day onboarding theatre. We audit, act, and report — fast enough to matter, structured enough to scale.</p>
+    </div>
+
+    <div class="process-grid reveal">
+      <div class="process-step">
+        <div class="process-num">— 01</div>
+        <h4 class="process-title">Audit</h4>
+        <p class="process-desc">Deep account review covering structure, keyword coverage, ACoS, TACoS, listing health, and untapped opportunity.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">— 02</div>
+        <h4 class="process-title">Strategy</h4>
+        <p class="process-desc">Quarterly plan tied to revenue and margin targets, with clear KPIs and budget allocation per campaign type.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">— 03</div>
+        <h4 class="process-title">Execute</h4>
+        <p class="process-desc">Weekly optimization cycles — bid moves, negations, new campaign launches — with full audit trail and SOPs.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">— 04</div>
+        <h4 class="process-title">Report</h4>
+        <p class="process-desc">Clear weekly and monthly reporting that ties spend to revenue, with strategic recommendations — not data dumps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="reveal">
+        <span class="section-eyebrow">Why EDAD</span>
+        <h2 class="section-title">Senior strategy. <em>Hands-on execution.</em></h2>
+        <p class="section-desc" style="margin-bottom: 40px;">Most agencies sell you the pitch deck and hand you off to a junior. We don't. Every account gets a senior PPC strategist on the wheel, every week.</p>
+
+        <div class="why-features">
+          <div class="why-item">
+            <h4>Operator-led, not sold</h4>
+            <p>You talk to the person managing your account, not an account manager forwarding emails.</p>
+          </div>
+          <div class="why-item">
+            <h4>TACoS-first thinking</h4>
+            <p>We optimize for total advertising efficiency and brand-halo growth — not vanity ACoS metrics.</p>
+          </div>
+          <div class="why-item">
+            <h4>Transparent reporting</h4>
+            <p>You see what we did, why we did it, and what it earned. Every week.</p>
+          </div>
+          <div class="why-item">
+            <h4>Built-in systems</h4>
+            <p>Our internal SOPs and automation tools mean nothing falls through the cracks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="visual-card reveal">
+        <div class="visual-label">— Client Note</div>
+        <div class="visual-quote">"They cut our ACoS by <em>41%</em> in the first quarter and grew our revenue <em>2.3x</em> — without us touching a single bid."</div>
+        <div class="visual-attr">Brand Owner · Health & Wellness Category</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="container cta-content">
+    <h2>Let's see what your account is <em>actually capable of.</em></h2>
+    <p>Free PPC audit. No pitch deck, no fluff. Just the gaps in your account and what we'd do about them.</p>
+    <a href="mailto:hello@edadadvertising.com" class="btn-primary">Request a Free Audit</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">EDAD <span>Advertising</span></div>
+        <p>EDAD Advertising LLC — Performance-driven Amazon PPC and growth partner for ambitious brands.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">PPC Management</a></li>
+          <li><a href="#services">Amazon DSP</a></li>
+          <li><a href="#services">Listing Optimization</a></li>
+          <li><a href="#services">Consulting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#why">Why EDAD</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@edadadvertising.com">hello@edadadvertising.com</a></li>
+          <li><a href="#">New Mexico, USA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 EDAD Advertising LLC. All rights reserved.</div>
+      <div>Registered in New Mexico, USA</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
