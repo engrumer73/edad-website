@@ -3,31 +3,33 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EDAD Advertising — Amazon PPC & Growth Partner</title>
-<meta name="description" content="EDAD Advertising LLC — Performance-driven Amazon PPC management for ambitious brands. Lower ACoS. Higher TACoS efficiency. Real growth." />
+<title>EDAD Advertising | Amazon PPC & Growth Partner</title>
+<meta name="description" content="EDAD Advertising LLC offers performance-driven Amazon PPC management for ambitious brands. Lower ACoS, higher TACoS efficiency, and real growth." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0a0a0a;
     --bg-elev: #111111;
-    --ink: #f5f1e8;
-    --ink-muted: #8a8478;
-    --gold: #c9a961;
-    --gold-bright: #e6c97a;
-    --line: rgba(245, 241, 232, 0.08);
-    --line-strong: rgba(245, 241, 232, 0.15);
+    --ink: #f0f4f8;
+    --ink-muted: #7a8694;
+    --gold: #5eb3f5;
+    --gold-bright: #8ccbff;
+    --line: rgba(240, 244, 248, 0.08);
+    --line-strong: rgba(240, 244, 248, 0.15);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  em, i { font-style: normal; }
 
   html { scroll-behavior: smooth; }
 
   body {
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     overflow-x: hidden;
@@ -74,26 +76,22 @@
   }
 
   .logo {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: 0.02em;
-    color: var(--ink);
-    text-decoration: none;
     display: inline-flex;
-    align-items: baseline;
-    gap: 6px;
+    align-items: center;
+    text-decoration: none;
     transition: opacity 0.3s;
   }
 
-  .logo:hover { opacity: 0.8; }
+  .logo:hover { opacity: 0.85; }
 
-  .logo span {
-    color: var(--gold);
-    font-weight: 300;
-    font-style: italic;
-    font-size: 18px;
-    letter-spacing: 0.01em;
+  .logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+
+  .footer-logo img {
+    height: 56px;
   }
 
   .nav-links {
@@ -146,7 +144,7 @@
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(201, 169, 97, 0.12) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(94, 179, 245, 0.12) 0%, transparent 60%);
     z-index: 0;
   }
 
@@ -171,28 +169,21 @@
     animation: fadeUp 0.8s ease forwards;
   }
 
-  .eyebrow::before {
-    content: '';
-    width: 24px;
-    height: 1px;
-    background: var(--gold);
-  }
-
   .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(48px, 7vw, 96px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(48px, 7vw, 88px);
     line-height: 1.02;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.035em;
     margin-bottom: 32px;
     opacity: 0;
     animation: fadeUp 0.8s ease 0.15s forwards;
   }
 
   .hero h1 em {
-    font-style: italic;
     color: var(--gold);
-    font-weight: 300;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .hero-sub {
@@ -228,7 +219,7 @@
   .btn-primary:hover {
     background: var(--gold-bright);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.25);
+    box-shadow: 0 10px 30px rgba(94, 179, 245, 0.25);
   }
 
   .btn-ghost {
@@ -271,13 +262,13 @@
   .stat-item:first-child { border-left: none; padding-left: 0; }
 
   .stat-number {
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--gold);
     line-height: 1;
     margin-bottom: 8px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
 
   .stat-label {
@@ -309,18 +300,18 @@
   }
 
   .section-title {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(36px, 5vw, 64px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 58px);
     line-height: 1.05;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
     margin-bottom: 24px;
   }
 
   .section-title em {
-    font-style: italic;
     color: var(--gold);
-    font-weight: 300;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .section-desc {
@@ -347,8 +338,8 @@
 
   .case-card:first-child {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, rgba(201, 169, 97, 0.04) 0%, var(--bg) 60%);
-    border-color: rgba(201, 169, 97, 0.2);
+    background: linear-gradient(135deg, rgba(94, 179, 245, 0.04) 0%, var(--bg) 60%);
+    border-color: rgba(94, 179, 245, 0.2);
   }
 
   .case-card:hover {
@@ -370,7 +361,7 @@
   .case-cat {
     color: var(--gold);
     padding: 4px 12px;
-    border: 1px solid rgba(201, 169, 97, 0.3);
+    border: 1px solid rgba(94, 179, 245, 0.3);
     border-radius: 100px;
   }
 
@@ -379,8 +370,8 @@
   }
 
   .case-title {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: -0.01em;
@@ -407,9 +398,9 @@
   }
 
   .case-stat-num {
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--gold);
     line-height: 1;
     margin-bottom: 6px;
@@ -466,9 +457,9 @@
   }
 
   .service-title {
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 16px;
     letter-spacing: -0.01em;
   }
@@ -525,7 +516,7 @@
   }
 
   .process-num {
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: var(--gold);
     margin-bottom: 16px;
@@ -533,9 +524,9 @@
   }
 
   .process-title {
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 12px;
   }
 
@@ -567,9 +558,9 @@
   .why-item:last-child { border-bottom: none; }
 
   .why-item h4 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
   }
 
@@ -595,7 +586,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 70% 30%, rgba(201, 169, 97, 0.15) 0%, transparent 50%);
+    background: radial-gradient(circle at 70% 30%, rgba(94, 179, 245, 0.15) 0%, transparent 50%);
   }
 
   .visual-label {
@@ -608,17 +599,18 @@
   }
 
   .visual-quote {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-size: 28px;
-    line-height: 1.3;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
     position: relative;
-    font-weight: 300;
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 
   .visual-quote em {
     color: var(--gold);
-    font-style: italic;
+    font-weight: 600;
+    font-style: normal;
   }
 
   .visual-attr {
@@ -644,25 +636,25 @@
     transform: translate(-50%, -50%);
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(201, 169, 97, 0.08) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(94, 179, 245, 0.08) 0%, transparent 60%);
     z-index: 0;
   }
 
   .cta-content { position: relative; z-index: 1; }
 
   .cta h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(40px, 6vw, 80px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 6vw, 72px);
     line-height: 1.05;
     margin-bottom: 32px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
 
   .cta h2 em {
-    font-style: italic;
     color: var(--gold);
-    font-weight: 300;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .cta p {
@@ -749,6 +741,254 @@
     transform: translateY(0);
   }
 
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1000;
+    padding: 40px 20px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .modal-overlay.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .modal-container {
+    background: var(--bg-elev);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    max-width: 640px;
+    width: 100%;
+    padding: 48px;
+    position: relative;
+    margin: auto;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+  }
+
+  .modal-overlay.active .modal-container {
+    transform: translateY(0);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-muted);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+
+  .modal-close:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+
+  .modal-header {
+    margin-bottom: 36px;
+  }
+
+  .modal-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .modal-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  .modal-title em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+
+  .modal-desc {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .audit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-field label {
+    font-size: 12px;
+    color: var(--ink-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    padding: 14px 16px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.3s;
+    width: 100%;
+  }
+
+  .form-field select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%237a8694' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+  }
+
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(94, 179, 245, 0.03);
+  }
+
+  .form-field textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+  }
+
+  .form-submit {
+    background: var(--gold);
+    color: var(--bg);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-submit:hover:not(:disabled) {
+    background: var(--gold-bright);
+    transform: translateY(-1px);
+  }
+
+  .form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .btn-loader {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(10, 10, 10, 0.3);
+    border-top-color: var(--bg);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin-left: 10px;
+  }
+
+  .form-submit.loading .btn-loader {
+    display: inline-block;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .form-note {
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .modal-success {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .success-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(94, 179, 245, 0.1);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+  }
+
+  .modal-success h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .modal-success p {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
+
   /* Mobile */
   @media (max-width: 768px) {
     .container { padding: 0 20px; }
@@ -764,6 +1004,11 @@
     .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
     section { padding: 80px 0; }
     .hero { padding: 120px 0 60px; }
+    .modal-container { padding: 32px 24px; }
+    .modal-title { font-size: 24px; }
+    .form-row { grid-template-columns: 1fr; gap: 20px; }
+    .logo img { height: 36px; }
+    .footer-logo img { height: 48px; }
   }
 </style>
 </head>
@@ -771,7 +1016,9 @@
 
 <nav>
   <div class="container nav-inner">
-    <a href="#" class="logo">EDAD <span>Advertising</span></a>
+    <a href="#" class="logo">
+      <img src="edad_logo.png" alt="EDAD Advertising" />
+    </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#case-studies">Case Studies</a></li>
@@ -779,7 +1026,7 @@
       <li><a href="#why">Why EDAD</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Book a Call</a>
+    <a href="#" class="nav-cta" onclick="openAuditModal(event)">Book a Call</a>
   </div>
 </nav>
 
@@ -789,9 +1036,9 @@
       <div>
         <div class="eyebrow">Amazon Advertising Specialists</div>
         <h1>Performance that pays for itself. <em>Predictably.</em></h1>
-        <p class="hero-sub">EDAD Advertising partners with ambitious Amazon brands to build PPC engines that scale revenue without burning margin. Strategy, execution, and reporting — handled.</p>
+        <p class="hero-sub">EDAD Advertising partners with ambitious Amazon brands to build PPC engines that scale revenue without burning margin. Strategy, execution, and reporting, all handled in-house.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Get a Free Audit</a>
+          <a href="#" class="btn-primary" onclick="openAuditModal(event)">Get a Free Audit</a>
           <a href="#services" class="btn-ghost">See Services →</a>
         </div>
       </div>
@@ -844,7 +1091,7 @@
       <div class="service-card">
         <div class="service-num">02 / DSP</div>
         <h3 class="service-title">Amazon DSP & Retargeting</h3>
-        <p class="service-desc">Programmatic display that fills the gaps PPC can't reach — competitor conquest, retargeting, and audience-led growth.</p>
+        <p class="service-desc">Programmatic display that fills the gaps PPC can't reach. Competitor conquest, retargeting, and audience-led growth.</p>
         <ul class="service-list">
           <li>Custom audience building</li>
           <li>Competitor conquest campaigns</li>
@@ -885,29 +1132,29 @@
     <div class="section-header reveal">
       <span class="section-eyebrow">How We Work</span>
       <h2 class="section-title">A process built for <em>compounding wins.</em></h2>
-      <p class="section-desc">No 90-day onboarding theatre. We audit, act, and report — fast enough to matter, structured enough to scale.</p>
+      <p class="section-desc">No 90-day onboarding theatre. We audit, act, and report. Fast enough to matter, structured enough to scale.</p>
     </div>
 
     <div class="process-grid reveal">
       <div class="process-step">
-        <div class="process-num">— 01</div>
+        <div class="process-num">01</div>
         <h4 class="process-title">Audit</h4>
         <p class="process-desc">Deep account review covering structure, keyword coverage, ACoS, TACoS, listing health, and untapped opportunity.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">— 02</div>
+        <div class="process-num">02</div>
         <h4 class="process-title">Strategy</h4>
         <p class="process-desc">Quarterly plan tied to revenue and margin targets, with clear KPIs and budget allocation per campaign type.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">— 03</div>
+        <div class="process-num">03</div>
         <h4 class="process-title">Execute</h4>
-        <p class="process-desc">Weekly optimization cycles — bid moves, negations, new campaign launches — with full audit trail and SOPs.</p>
+        <p class="process-desc">Weekly optimization cycles covering bid moves, negations, and new campaign launches, with a full audit trail and documented SOPs.</p>
       </div>
       <div class="process-step">
-        <div class="process-num">— 04</div>
+        <div class="process-num">04</div>
         <h4 class="process-title">Report</h4>
-        <p class="process-desc">Clear weekly and monthly reporting that ties spend to revenue, with strategic recommendations — not data dumps.</p>
+        <p class="process-desc">Clear weekly and monthly reporting that ties spend to revenue, with strategic recommendations instead of data dumps.</p>
       </div>
     </div>
   </div>
@@ -925,7 +1172,7 @@
       <div class="case-card">
         <div class="case-meta">
           <span class="case-cat">Restricted Category</span>
-          <span class="case-year">2022 — 2023</span>
+          <span class="case-year">2022 to 2023</span>
         </div>
         <h3 class="case-title">+39% Sales in 5 Months Across 70+ Parent ASINs</h3>
         <p class="case-desc">A restricted-category brand with 70+ parent ASINs needed a structured PPC rebuild without violating Amazon policies. We created customized strategies per product, restructured campaigns, and unlocked compounding growth.</p>
@@ -951,7 +1198,7 @@
           <span class="case-year">2022</span>
         </div>
         <h3 class="case-title">+27% Sales in 4 Weeks for a Home Category Brand</h3>
-        <p class="case-desc">Underperforming listings with poor SEO and weak CVR. We rebuilt copy with 70%+ SEO scores, restructured PPC, and aligned spend to TACoS targets — sales lifted 27% in month one and 12% in month two.</p>
+        <p class="case-desc">Underperforming listings with poor SEO and weak CVR. We rebuilt copy with 70%+ SEO scores, restructured PPC, and aligned spend to TACoS targets. Sales lifted 27% in month one and 12% in month two.</p>
         <div class="case-stats">
           <div class="case-stat">
             <div class="case-stat-num">+27%</div>
@@ -974,7 +1221,7 @@
           <span class="case-year">2024</span>
         </div>
         <h3 class="case-title">45% Profit Margin on a First-Time Amazon Launch</h3>
-        <p class="case-desc">A first-time seller in Kitchen & Home needed end-to-end guidance — from product hunting to launch. We sourced a high-USP product, built a converting listing, and ran an aggressive ranking-focused PPC strategy. Sold out in weeks.</p>
+        <p class="case-desc">A first-time seller in Kitchen & Home needed end-to-end guidance, from product hunting all the way to launch. We sourced a high-USP product, built a converting listing, and ran an aggressive ranking-focused PPC strategy. Sold out in weeks.</p>
         <div class="case-stats">
           <div class="case-stat">
             <div class="case-stat-num">45%</div>
@@ -1020,7 +1267,7 @@
           <span class="case-year">2024</span>
         </div>
         <h3 class="case-title">From Stagnant Sales to Profitable Within One Month</h3>
-        <p class="case-desc">A gourmet food brand with poor reviews, low rankings, and inefficient ad spend. We rebuilt the listing, ran exact-match and auto PPC campaigns, and implemented a review management system — turning the account profitable in 30 days.</p>
+        <p class="case-desc">A gourmet food brand with poor reviews, low rankings, and inefficient ad spend. We rebuilt the listing, ran exact-match and auto PPC campaigns, and implemented a review management system. The account turned profitable in 30 days.</p>
         <div class="case-stats">
           <div class="case-stat">
             <div class="case-stat-num">30 Days</div>
@@ -1055,7 +1302,7 @@
           </div>
           <div class="why-item">
             <h4>TACoS-first thinking</h4>
-            <p>We optimize for total advertising efficiency and brand-halo growth — not vanity ACoS metrics.</p>
+            <p>We optimize for total advertising efficiency and brand-halo growth, not vanity ACoS metrics.</p>
           </div>
           <div class="why-item">
             <h4>Transparent reporting</h4>
@@ -1069,8 +1316,8 @@
       </div>
 
       <div class="visual-card reveal">
-        <div class="visual-label">— Client Note</div>
-        <div class="visual-quote">"They cut our ACoS by <em>41%</em> in the first quarter and grew our revenue <em>2.3x</em> — without us touching a single bid."</div>
+        <div class="visual-label">Client Note</div>
+        <div class="visual-quote">"They cut our ACoS by <em>41%</em> in the first quarter and grew our revenue <em>2.3x</em>, without us touching a single bid."</div>
         <div class="visual-attr">Brand Owner · Health & Wellness Category</div>
       </div>
     </div>
@@ -1081,7 +1328,7 @@
   <div class="container cta-content">
     <h2>Let's see what your account is <em>actually capable of.</em></h2>
     <p>Free PPC audit. No pitch deck, no fluff. Just the gaps in your account and what we'd do about them.</p>
-    <a href="mailto:hello@edadadvertising.com" class="btn-primary">Request a Free Audit</a>
+    <a href="#" class="btn-primary" onclick="openAuditModal(event)">Request a Free Audit</a>
   </div>
 </section>
 
@@ -1089,8 +1336,10 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo">EDAD <span>Advertising</span></div>
-        <p>EDAD Advertising LLC — Performance-driven Amazon PPC and growth partner for ambitious brands.</p>
+        <div class="logo footer-logo">
+          <img src="edad_logo.png" alt="EDAD Advertising" />
+        </div>
+        <p>EDAD Advertising LLC is a performance-driven Amazon PPC and growth partner for ambitious brands.</p>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
@@ -1112,7 +1361,7 @@
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@edadadvertising.com">hello@edadadvertising.com</a></li>
+          <li><a href="mailto:info@edadadvertising.com">info@edadadvertising.com</a></li>
           <li><a href="tel:+17373075954">+1 (737) 307-5954</a></li>
           <li style="color: var(--ink-muted); font-size: 14px;">1209 Mountain Road PL NE #11684<br>Albuquerque, NM 87110</li>
         </ul>
@@ -1125,6 +1374,125 @@
   </div>
 </footer>
 
+<!-- Audit Form Modal -->
+<div class="modal-overlay" id="auditModal" onclick="closeModalOnOverlay(event)">
+  <div class="modal-container">
+    <button class="modal-close" onclick="closeAuditModal()" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="modal-content" id="modalContent">
+      <div class="modal-header">
+        <span class="modal-eyebrow">Free Audit Request</span>
+        <h3 class="modal-title">Let's see what your account is <em>actually capable of.</em></h3>
+        <p class="modal-desc">Tell us about your brand. We'll review your account and reply within 24 hours with the gaps we found and how we'd fix them.</p>
+      </div>
+
+      <form id="auditForm" class="audit-form" onsubmit="submitAuditForm(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="John Smith" />
+          </div>
+          <div class="form-field">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@brand.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="brandName">Brand Name *</label>
+            <input type="text" id="brandName" name="brandName" required placeholder="Your Amazon brand" />
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="marketplace">Primary Marketplace *</label>
+            <select id="marketplace" name="marketplace" required>
+              <option value="">Select marketplace</option>
+              <option value="US">Amazon US</option>
+              <option value="UK">Amazon UK</option>
+              <option value="EU">Amazon EU</option>
+              <option value="CA">Amazon Canada</option>
+              <option value="AU">Amazon Australia</option>
+              <option value="Other">Other / Multiple</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="monthlyRevenue">Monthly Revenue *</label>
+            <select id="monthlyRevenue" name="monthlyRevenue" required>
+              <option value="">Select range</option>
+              <option value="Under $10k">Under $10k</option>
+              <option value="$10k - $50k">$10k - $50k</option>
+              <option value="$50k - $100k">$50k - $100k</option>
+              <option value="$100k - $500k">$100k - $500k</option>
+              <option value="$500k - $1M">$500k - $1M</option>
+              <option value="$1M+">$1M+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="monthlyAdSpend">Monthly Amazon Ad Spend *</label>
+          <select id="monthlyAdSpend" name="monthlyAdSpend" required>
+            <option value="">Select range</option>
+            <option value="Under $1k">Under $1k</option>
+            <option value="$1k - $5k">$1k - $5k</option>
+            <option value="$5k - $15k">$5k - $15k</option>
+            <option value="$15k - $50k">$15k - $50k</option>
+            <option value="$50k+">$50k+</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="services">What services are you interested in? *</label>
+          <select id="services" name="services" required>
+            <option value="">Select primary need</option>
+            <option value="PPC Management">PPC Management</option>
+            <option value="Amazon DSP">Amazon DSP</option>
+            <option value="Listing Optimization">Listing Optimization</option>
+            <option value="Full Account Management">Full Account Management</option>
+            <option value="Growth Consulting">Growth Consulting</option>
+            <option value="New Brand Launch">New Brand Launch</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Tell us about your biggest challenge</label>
+          <textarea id="message" name="message" rows="4" placeholder="High ACoS, low conversion, scaling issues, launch help..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="submitBtn">
+          <span class="btn-text">Request My Free Audit</span>
+          <span class="btn-loader"></span>
+        </button>
+
+        <p class="form-note">By submitting, you agree to be contacted about your Amazon advertising. We respect your inbox.</p>
+      </form>
+    </div>
+
+    <div class="modal-success" id="modalSuccess" style="display: none;">
+      <div class="success-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3>Request received.</h3>
+      <p>Thanks for reaching out. We'll review your account and reply within 24 hours with our findings.</p>
+      <button class="btn-primary" onclick="closeAuditModal()" style="margin-top: 24px;">Close</button>
+    </div>
+  </div>
+</div>
+
 <script>
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
@@ -1136,6 +1504,83 @@
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Modal handling
+  const modal = document.getElementById('auditModal');
+  const modalContent = document.getElementById('modalContent');
+  const modalSuccess = document.getElementById('modalSuccess');
+
+  function openAuditModal(e) {
+    if (e) e.preventDefault();
+    modal.classList.add('active');
+    document.body.classList.add('modal-open');
+    modalContent.style.display = 'block';
+    modalSuccess.style.display = 'none';
+  }
+
+  function closeAuditModal() {
+    modal.classList.remove('active');
+    document.body.classList.remove('modal-open');
+  }
+
+  function closeModalOnOverlay(e) {
+    if (e.target === modal) {
+      closeAuditModal();
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeAuditModal();
+    }
+  });
+
+  // Google Sheets submission via Apps Script Web App
+  const GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+  async function submitAuditForm(e) {
+    e.preventDefault();
+    const form = document.getElementById('auditForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const btnText = submitBtn.querySelector('.btn-text');
+
+    submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
+    btnText.textContent = 'Sending...';
+
+    const formData = {
+      timestamp: new Date().toISOString(),
+      fullName: form.fullName.value,
+      email: form.email.value,
+      brandName: form.brandName.value,
+      phone: form.phone.value || 'Not provided',
+      marketplace: form.marketplace.value,
+      monthlyRevenue: form.monthlyRevenue.value,
+      monthlyAdSpend: form.monthlyAdSpend.value,
+      services: form.services.value,
+      message: form.message.value || 'No additional info'
+    };
+
+    try {
+      await fetch(GOOGLE_SHEETS_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      // Show success
+      modalContent.style.display = 'none';
+      modalSuccess.style.display = 'block';
+      form.reset();
+    } catch (err) {
+      alert('Something went wrong. Please email info@edadadvertising.com directly.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('loading');
+      btnText.textContent = 'Request My Free Audit';
+    }
+  }
 </script>
 
 </body>
