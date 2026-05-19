@@ -329,6 +329,108 @@
     line-height: 1.6;
   }
 
+  /* Case Studies */
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .case-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    padding: 40px;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .case-card:first-child {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.04) 0%, var(--bg) 60%);
+    border-color: rgba(201, 169, 97, 0.2);
+  }
+
+  .case-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .case-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .case-cat {
+    color: var(--gold);
+    padding: 4px 12px;
+    border: 1px solid rgba(201, 169, 97, 0.3);
+    border-radius: 100px;
+  }
+
+  .case-year {
+    color: var(--ink-muted);
+  }
+
+  .case-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  .case-card:first-child .case-title {
+    font-size: 36px;
+  }
+
+  .case-desc {
+    color: var(--ink-muted);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+
+  .case-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .case-stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .case-stat-label {
+    font-size: 11px;
+    color: var(--ink-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .case-grid { grid-template-columns: 1fr; }
+    .case-card { padding: 28px; }
+    .case-card:first-child .case-title { font-size: 26px; }
+    .case-stats { grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+    .case-stat-num { font-size: 22px; }
+  }
+
   /* Services */
   .services-grid {
     display: grid;
@@ -672,6 +774,7 @@
     <a href="#" class="logo">EDAD <span>Advertising</span></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#why">Why EDAD</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -810,6 +913,133 @@
   </div>
 </section>
 
+<section id="case-studies" style="background: var(--bg-elev); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Case Studies</span>
+      <h2 class="section-title">Results that <em>speak for themselves.</em></h2>
+      <p class="section-desc">Real accounts. Real numbers. Here's what disciplined execution looks like across categories.</p>
+    </div>
+
+    <div class="case-grid reveal">
+      <div class="case-card">
+        <div class="case-meta">
+          <span class="case-cat">Restricted Category</span>
+          <span class="case-year">2022 — 2023</span>
+        </div>
+        <h3 class="case-title">+39% Sales in 5 Months Across 70+ Parent ASINs</h3>
+        <p class="case-desc">A restricted-category brand with 70+ parent ASINs needed a structured PPC rebuild without violating Amazon policies. We created customized strategies per product, restructured campaigns, and unlocked compounding growth.</p>
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">+39%</div>
+            <div class="case-stat-label">Sales Growth YoY</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">+108%</div>
+            <div class="case-stat-label">PPC Sales Lift</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">+77%</div>
+            <div class="case-stat-label">Spend Efficiency</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-meta">
+          <span class="case-cat">Kitchen & Home</span>
+          <span class="case-year">2022</span>
+        </div>
+        <h3 class="case-title">+27% Sales in 4 Weeks for a Home Category Brand</h3>
+        <p class="case-desc">Underperforming listings with poor SEO and weak CVR. We rebuilt copy with 70%+ SEO scores, restructured PPC, and aligned spend to TACoS targets — sales lifted 27% in month one and 12% in month two.</p>
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">+27%</div>
+            <div class="case-stat-label">Sales (Month 1)</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">70%+</div>
+            <div class="case-stat-label">SEO Score Lift</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">+12%</div>
+            <div class="case-stat-label">Sales (Month 2)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-meta">
+          <span class="case-cat">New Brand Launch</span>
+          <span class="case-year">2024</span>
+        </div>
+        <h3 class="case-title">45% Profit Margin on a First-Time Amazon Launch</h3>
+        <p class="case-desc">A first-time seller in Kitchen & Home needed end-to-end guidance — from product hunting to launch. We sourced a high-USP product, built a converting listing, and ran an aggressive ranking-focused PPC strategy. Sold out in weeks.</p>
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">45%</div>
+            <div class="case-stat-label">Profit Margin</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">3 Mo</div>
+            <div class="case-stat-label">To First Sellout</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">Low</div>
+            <div class="case-stat-label">ACoS Maintained</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-meta">
+          <span class="case-cat">Leather Goods</span>
+          <span class="case-year">2022</span>
+        </div>
+        <h3 class="case-title">+14.7% Sales in Month One for a Premium Leather Brand</h3>
+        <p class="case-desc">A premium leather brand struggled with low CVR and weak external traffic. We optimized listings, ran short-term deals, restructured PPC, and built a content strategy focused on benefits over features.</p>
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">+14.7%</div>
+            <div class="case-stat-label">Sales (Month 1)</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">3 Mo</div>
+            <div class="case-stat-label">Sustained Growth</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">A+</div>
+            <div class="case-stat-label">Content Rebuilt</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-meta">
+          <span class="case-cat">Gourmet Food</span>
+          <span class="case-year">2024</span>
+        </div>
+        <h3 class="case-title">From Stagnant Sales to Profitable Within One Month</h3>
+        <p class="case-desc">A gourmet food brand with poor reviews, low rankings, and inefficient ad spend. We rebuilt the listing, ran exact-match and auto PPC campaigns, and implemented a review management system — turning the account profitable in 30 days.</p>
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">30 Days</div>
+            <div class="case-stat-label">To Profitability</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">↓ ACoS</div>
+            <div class="case-stat-label">Ad Spend Cut</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">↑ ROAS</div>
+            <div class="case-stat-label">Return Lifted</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="why">
   <div class="container">
     <div class="why-grid">
@@ -883,13 +1113,14 @@
         <h5>Contact</h5>
         <ul>
           <li><a href="mailto:hello@edadadvertising.com">hello@edadadvertising.com</a></li>
-          <li><a href="#">New Mexico, USA</a></li>
+          <li><a href="tel:+17373075954">+1 (737) 307-5954</a></li>
+          <li style="color: var(--ink-muted); font-size: 14px;">1209 Mountain Road PL NE #11684<br>Albuquerque, NM 87110</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div>© 2026 EDAD Advertising LLC. All rights reserved.</div>
-      <div>Registered in New Mexico, USA</div>
+      <div>Registered in Albuquerque, New Mexico</div>
     </div>
   </div>
 </footer>
