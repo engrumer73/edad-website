@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: Claude-User
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /services.html
+Disallow: /work.html
+
+Sitemap: https://edadadvertising.com/sitemap.xml
