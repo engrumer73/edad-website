@@ -214,9 +214,9 @@ footer ul{list-style:none;display:grid;gap:2px}footer li a{font-size:14px;displa
 .who .av{color:var(--accent);font-size:15px;font-weight:800}
 
 /* theme toggle */
-.tt{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:8px;background:0;border:1px solid rgba(var(--ink),.2);border-radius:2px;color:var(--strong);cursor:pointer;flex:none}
-.tt:hover{border-color:var(--accent);color:var(--accent)}
-.tt svg{width:18px;height:18px}.tt .sun{display:none}
+.tt{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 4px 0 10px;background:0;border:0;border-radius:50%;color:var(--strong);cursor:pointer;flex:none;opacity:.85;transition:opacity .2s,color .2s,background .2s}
+.tt:hover{opacity:1;color:var(--accent);background:rgba(var(--ink),.06)}
+.tt svg{width:24px;height:24px}.tt .sun{display:none}
 [data-theme=light] .tt .sun{display:block}[data-theme=light] .tt .moon{display:none}
 .nav .wrap>.tools{display:flex;align-items:center}
 /* light theme: same roles, swapped values */
