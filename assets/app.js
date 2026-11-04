@@ -1,5 +1,9 @@
 (function(){
 document.documentElement.classList.add('js');
+var tb=document.querySelector('.tt'),mt=document.querySelector('meta[name=theme-color]');
+function sT(t,save){document.documentElement.setAttribute('data-theme',t);if(mt)mt.content=t==='light'?'#F2F7FB':'#060B16';if(tb){tb.setAttribute('aria-pressed',t==='light');tb.setAttribute('aria-label',t==='light'?'Switch to dark mode':'Switch to light mode')}if(save){try{localStorage.setItem('edad-theme',t)}catch(e){}}}
+sT(document.documentElement.getAttribute('data-theme')||'dark');
+if(tb)tb.addEventListener('click',function(){sT(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light',1)});
 var nav=document.querySelector('.nav'),btn=document.querySelector('.burger'),links=document.querySelector('.links');
 function sc(){nav.classList.toggle('scrolled',window.scrollY>40)}sc();window.addEventListener('scroll',sc,{passive:true});
 function close(){links.classList.remove('open');btn.setAttribute('aria-expanded','false')}
