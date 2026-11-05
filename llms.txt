@@ -10,6 +10,7 @@
 
 ## Pages
 - [About](https://edadadvertising.com/about.html)
+- [Case Studies](https://edadadvertising.com/case-studies.html): eight Amazon PPC and main image CRO case studies
 - [Results](https://edadadvertising.com/results.html)
 - [Testimonials](https://edadadvertising.com/testimonials.html)
 - [Contact](https://edadadvertising.com/contact.html): free audit, replies within 24 hours
