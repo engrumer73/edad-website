@@ -234,3 +234,4 @@ footer ul{list-style:none;display:grid;gap:2px}footer li a{font-size:14px;displa
 .concepts{margin-top:34px}.clabel{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:14px}
 .cgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 @media(max-width:880px){.shots{grid-template-columns:1fr}.cgrid{grid-template-columns:1fr 1fr}}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}

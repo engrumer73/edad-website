@@ -21,6 +21,8 @@ document.querySelectorAll('[data-kind]').forEach(function(c){c.hidden=!(b.datase
 // contact form opens the visitor's email app (nothing is stored)
 var f=document.getElementById('contact-form');
 if(f){var p=new URLSearchParams(location.search).get('service');if(p&&f.service)for(var i=0;i<f.service.options.length;i++)if(f.service.options[i].dataset.slug===p)f.service.selectedIndex=i;
-f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
-location.href='mailto:'+f.dataset.to+'?subject='+encodeURIComponent('Free audit request: '+d.get('service'))+'&body='+encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\n\n'+d.get('message'))})}
+f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f),b=f.querySelector('button[type=submit]'),m=f.querySelector('.fmsg');
+function mailto(){location.href='mailto:'+f.dataset.to+'?subject='+encodeURIComponent('Free audit request: '+d.get('service'))+'&body='+encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\n\n'+d.get('message'))}
+b.disabled=true;b.textContent='Sending...';
+fetch(f.action,{method:'POST',body:d}).then(function(r){return r.json().then(function(j){if(!r.ok||!j.ok)throw 0})}).then(function(){f.reset();m.textContent='Thank you. Your request is in, and we will reply within 24 hours.';b.textContent='Sent'}).catch(function(){b.disabled=false;b.textContent='Send message';m.textContent='Could not send right now. Opening your email app instead.';mailto()})})}
 })();
