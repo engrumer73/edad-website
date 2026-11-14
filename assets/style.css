@@ -145,7 +145,7 @@ details p{max-width:760px;padding:0 0 24px}
 .case .top{display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:26px}
 .cnum{font-size:64px;font-weight:800;line-height:.9;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.4px var(--accent)}
 .pills{display:flex;gap:8px;flex-wrap:wrap}
-.pill{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;padding:5px 12px;border-radius:999px;border:1px solid color-mix(in srgb,currentColor 25%,transparent)}
+.pill{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;padding:5px 12px;border-radius:999px;border:1px solid color-mix(in srgb,currentColor 25%,transparent)}
 .pills .pill:first-child{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .case h2{font-size:clamp(26px,4vw,42px);line-height:1.1;margin-bottom:8px}
 .cat{font-size:15px;margin-bottom:36px}
@@ -191,7 +191,7 @@ footer ul{list-style:none;display:grid;gap:2px}footer li a{font-size:14px;displa
 .js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
 /* breakpoints */
-@media(max-width:1120px){
+@media(max-width:1000px){
  .burger{display:block}
  .links{position:fixed;top:0;right:0;bottom:0;width:min(86vw,360px);background:var(--bg-deep);flex-direction:column;align-items:flex-start;gap:26px;padding:100px 32px 32px;transform:translateX(100%);transition:transform .35s;border-left:1px solid rgba(var(--ink),.12)}
  .links.open{transform:none}.links a{font-size:20px}.links .btn{font-size:15px;margin-top:6px}
@@ -235,3 +235,9 @@ footer ul{list-style:none;display:grid;gap:2px}footer li a{font-size:14px;displa
 .cgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 @media(max-width:880px){.shots{grid-template-columns:1fr}.cgrid{grid-template-columns:1fr 1fr}}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* audit fixes: compact desktop nav for 1001-1180px, very narrow phones */
+@media(min-width:1001px) and (max-width:1180px){.links{gap:16px}.links a{font-size:13.5px}.links .btn{padding:11px 16px}.brand{font-size:19px}}
+.brand{white-space:nowrap}.brand svg{flex:none}
+@media(max-width:360px){.wrap{padding-left:16px;padding-right:16px}.brand{font-size:15px;gap:8px}.brand svg{height:28px}.tt{margin-left:4px}.burger{padding:0 10px}.tiles,.case .tiles{grid-template-columns:1fr}.formcard,.stats,.svc{padding:18px}.crow{gap:12px}input,select,textarea{min-width:0;max-width:100%}}
+@media(max-width:340px){.brand{font-size:13.5px;gap:6px;letter-spacing:-.03em}.brand svg{height:24px}.tt{width:38px;margin:0 2px 0 4px}.tt svg{width:20px;height:20px}.burger{padding:0 8px;font-size:13px;min-width:40px}}

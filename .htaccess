@@ -1,4 +1,14 @@
-# Speed and security (Hostinger / LiteSpeed / Apache)
+# EDAD Advertising: speed and security (Hostinger / LiteSpeed / Apache)
+Options -Indexes
+RewriteEngine On
+# Always use HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Block hidden files/folders (.git, .env) and repo-only files
+RewriteRule (^|/)\.(?!well-known/) - [F,L]
+RewriteRule ^(README\.md|EDAD\ logo\ new\.png|.*\.(bak|md|log|sql|py|sh))$ - [F,L,NC]
+
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/ld+json application/manifest+json text/plain application/xml image/svg+xml
 </IfModule>
@@ -12,8 +22,14 @@ ExpiresByType application/javascript "access plus 1 week"
 ExpiresByType text/html "access plus 10 minutes"
 </IfModule>
 <IfModule mod_headers.c>
-Header set X-Content-Type-Options "nosniff"
-Header set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Strict-Transport-Security "max-age=31536000"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+Header always set Cross-Origin-Opener-Policy "same-origin"
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-iBxKqU0SzNujdj9acWa9s+IxV9oINQu+iP0pgXs/xrU='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+Header unset X-Powered-By
 <FilesMatch "\.(woff2|png|webp)$">
 Header set Cache-Control "public, max-age=31536000, immutable"
 </FilesMatch>
