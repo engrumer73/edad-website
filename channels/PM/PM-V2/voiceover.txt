@@ -1,0 +1,41 @@
+Watch a chatbot answer you. It doesn't appear all at once. It streams, piece by piece, like someone typing really fast.
+
+That's not just a visual effect. That's genuinely how it works. It's building the answer one small piece at a time. And those pieces aren't quite words. They're called tokens.
+
+Once you understand tokens, a lot of strange AI behaviour suddenly makes sense. Let's go.
+
+OpenAI describes tokens as the units its models use to process text. A token can be a single character, part of a word, a whole word, or punctuation. Even spaces affect how text gets divided up.
+
+Common short words are usually one token. Longer or rarer words get split into pieces. And the split doesn't always follow where words start and end — tokens can include a trailing space, or just part of a word.
+
+The method most of these models use is called subword tokenization. OpenAI's GPT models use a version called Byte-Pair Encoding. You don't need to remember the name — just the idea: text gets chopped into reusable chunks.
+
+How big is a token? For English, OpenAI's rough rules are: one token is about four characters, or about three-quarters of a word. So 100 tokens is roughly 75 words.
+
+Other languages split differently. OpenAI's own example: the Spanish phrase "Cómo estás" — ten characters — comes out as five tokens. That's one reason the same message can "cost" a different number of tokens in different languages.
+
+Here's a detail I find fascinating. To the model, the same word can be different tokens depending on how it's written.
+
+In OpenAI's tokenizer, " Red" — with a space before it and a capital R — is token number 2296. " red" with a lowercase r is token 2266. Different numbers. To the machine, those are two separate things it has learned are closely related.
+
+So when you type, the model never sees letters the way you do. It sees a list of numbers.
+
+Now for the actual writing. OpenAI lays out three steps: your text is split into tokens, the model processes those tokens, and then the response is generated as a sequence of tokens, which is converted back into text.
+
+That last step is the heart of it. At each step, the model predicts what should come next, and then selects one. Then it adds that token to everything so far, and predicts again. And again. Hundreds of times for a long answer.
+
+It never plans the whole paragraph in advance the way you might. It's always answering one small question: given everything so far, what's the most fitting next piece?
+
+This explains a lot.
+
+It's why chatbots have length limits — they're measured in tokens, not words, and each model has a maximum it can handle at once.
+
+It's why AI pricing for developers is per token.
+
+And it's a big part of why chatbots can be oddly bad at things that seem easy, like counting the letters in a word. The model doesn't see letters — it sees chunks. We'll do a whole video on that one.
+
+It also connects to Monday's video about AI making things up. If the model is always picking the most fitting next piece, then when it doesn't truly know a fact, it can still produce something that fits perfectly — and is completely wrong.
+
+So the next time you watch an answer stream onto your screen, you'll know what's happening: a very fast machine, choosing one small piece at a time.
+
+Next time: why AI uses so much electricity, and where all that power goes. Subscribe for AI explained without the hype.

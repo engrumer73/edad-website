@@ -1,0 +1,37 @@
+In 2023, two New York lawyers handed a federal judge a legal brief full of court cases. Real-sounding names, real-sounding quotes. There was just one problem. The cases didn't exist. A chatbot had made them up.
+
+It cost them a $5,000 fine and a lot of embarrassment. And it's the clearest example I know of something every AI user needs to understand: chatbots sometimes invent things, and they do it with total confidence.
+
+Let's look at why that happens — in plain English.
+
+The case was called Mata v. Avianca. A passenger, Roberto Mata, sued the airline Avianca, saying he was hurt by a serving cart on a 2019 flight from El Salvador to New York.
+
+His lawyers, Steven Schwartz and Peter LoDuca, filed a brief citing six earlier cases. Schwartz had used ChatGPT to help with the research. He even asked the chatbot whether the cases were real — and it said yes.
+
+They weren't. When the airline's lawyers and the court couldn't find them, the judge, P. Kevin Castel, started asking questions. On the 22nd of June 2023 he fined the lawyers and their firm $5,000. He wrote that they had "abandoned their responsibilities" — and he was especially unhappy that they kept standing by the fake cases after the court raised doubts. They were also ordered to send the judge's opinion to the real judges whose names the chatbot had attached to the fake rulings.
+
+So how does a machine that seems so smart produce something completely fake?
+
+Here's the core idea. A chatbot like ChatGPT is a language model. During training, it read an enormous amount of text and learned to predict what word, or piece of a word, is likely to come next.
+
+When you ask it something, it isn't looking up a fact in a database by default. It's generating the most plausible-sounding continuation, one piece at a time. Most of the time, plausible and true are the same thing. That's why it's useful.
+
+But when it doesn't really "know" — say, a rare court case, or someone's birthday — plausible and true split apart. And it can produce something that looks exactly like a real answer.
+
+In September 2025, researchers at OpenAI published a paper called "Why Language Models Hallucinate." Their argument is surprisingly simple. They compare it to a student taking a multiple-choice exam.
+
+If you don't know an answer and you leave it blank, you get zero. If you guess, you might get lucky. So on a test that only counts right answers, guessing always looks better.
+
+The researchers argue that the way AI models are trained and scored works the same way. Most tests reward accuracy alone, so models learn to guess rather than admit uncertainty. They even give a real example: when they asked a widely used chatbot for the PhD dissertation title of one of the paper's own authors, it confidently produced three different answers. None were correct.
+
+Their suggested fix is to change the scoreboards — penalise confident wrong answers more than honest "I don't know"s. Companies say newer models hallucinate less, but nobody claims the problem is gone.
+
+So what should you actually do? Three habits.
+
+One: treat a chatbot like a very fast, very confident assistant who sometimes bluffs. Great for drafts, ideas and explanations. Not a final source.
+
+Two: anything that matters — a name, a date, a number, a quote, a law — check it somewhere independent. If the tool gives you links, open them and make sure they say what it claims.
+
+Three: asking the chatbot "are you sure?" is not a check. Remember, in the Avianca case, that's exactly what the lawyer did.
+
+AI tools are genuinely useful, and on this channel we'll keep testing them honestly — what works, what doesn't, and why. Next time: how a chatbot actually builds its answer, token by token. Subscribe if you want AI explained without the hype.

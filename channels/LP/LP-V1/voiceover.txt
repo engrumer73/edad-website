@@ -1,0 +1,41 @@
+A ship as long as three football fields gets lifted 26 metres — that's roughly an eight-storey building — and there isn't a single pump doing the lifting.
+
+I'm a mechanical engineer, and the first time I really understood how the Panama Canal works, I had to sit back for a minute. Because the whole thing runs on gravity. And rain.
+
+Let me show you.
+
+First, the problem. Panama is narrow, but it isn't flat. A ridge of hills — the Continental Divide — runs right through it. A sea-level canal would have meant digging through all of it. The French tried a sea-level route in the 1880s, and it ended in failure.
+
+The American design that opened in 1914 went over the hills instead of through them.
+
+Here's the trick. Engineers dammed the Chagres River and created Gatun Lake, an artificial lake sitting 26 metres, about 85 feet, above sea level. It covers roughly 425 square kilometres. Ships don't cross the country at sea level. They climb up to the lake, sail across it, and climb back down.
+
+The climbing is done by locks. On the Atlantic side, the Gatun Locks lift ships in three steps — 85 feet in total. On the Pacific side, it's split: the Miraflores Locks do two steps, and Pedro Miguel does one.
+
+A full crossing is about 80 kilometres and takes eight to ten hours.
+
+Okay, the fun part. A lock is a concrete box with gates at each end. The original chambers are about 305 metres long and 33.5 metres wide.
+
+A ship sails into the lower chamber. The gates close behind it. Now we need to raise the water.
+
+Where does that water come from? From the lake above. Gatun Lake is higher than the chamber, so the operators open valves, and water flows downhill through huge tunnels — culverts — that run under the chamber floor, and rises up through openings in the floor.
+
+No pumps. Gravity does it. The water in the chamber rises until it matches the next step, the gates open, and the ship moves forward. Repeat.
+
+Going down is the same idea in reverse: you let water out of the chamber, toward the sea.
+
+From an engineering point of view, this is elegant. The energy for lifting a fully loaded cargo ship comes from rain that fell on the hills and collected in a lake. The machinery mostly just opens and closes valves and gates.
+
+But there's a cost. Every time a ship goes through, the water that lifted it flows out to the ocean. On average, one transit uses about 200 million litres of fresh water. At around 40 transits a day, the canal can use something like 10 billion litres daily.
+
+So the canal depends completely on rainfall. In 2023 and 2024, a severe drought dropped Gatun Lake to historic lows, and the canal had to cut daily transits and limit how deep ships could sit in the water. Fewer ships, lighter loads, long queues on both oceans.
+
+And then the opposite: in March 2026, the canal authority said Gatun and Alajuela reservoirs were at their highest March levels in its recorded history. Same canal, totally different year. Rain decides.
+
+In 2016, Panama opened a third set of locks for much bigger ships, called Neopanamax. Construction ran from 2007 to 2016, and commercial operation began on the 26th of June 2016. The newer system can reuse some of the water used to move vessels — the original locks can't.
+
+When the canal opened in 1914 it handled about a thousand ships a year. By 2008 it was more than 14,700.
+
+So here's what I want you to remember: one of the most important shipping routes in the world is, at its heart, a water staircase powered by rain on a hillside. Brilliant design — and a reminder that every machine has a limit, and sometimes the limit is the weather.
+
+Next time on Load Path: why the world's tallest building is shaped like a Y. Subscribe so you don't miss it.

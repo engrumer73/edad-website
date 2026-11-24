@@ -1,0 +1,37 @@
+The Burj Khalifa is 828 metres tall. 163 floors. And when people ask me how it stands up, they usually assume the hard part is holding up all that weight.
+
+It isn't. Gravity is the easy part. The real enemy of a building this tall is the wind.
+
+Here's what wind actually does to a tall building. When air flows past any object — a pole, a chimney, a skyscraper — it doesn't just push. It peels off the sides in little swirls, called vortices. They break away first on one side, then the other, then the first side again.
+
+Every time a vortex breaks away, it gives the building a small sideways tug. Left, right, left, right. The Burj's structural engineer, Bill Baker of the firm SOM, put it simply: when wind passes an object, it creates vortices that can cause the building to sway.
+
+And if those tugs arrive at the same rhythm as the building's natural sway — like pushing a child on a swing at exactly the right moment — the movement builds up. As an engineer, that's the scenario you design against.
+
+So look at the Burj from above. It isn't a square or a circle. It's a Y — three wings coming out from the centre.
+
+The engineers chose that shape on purpose, to reduce wind forces on the tower and keep the structure simple to build. A Y-shaped floor plate also resists twisting much better than a square or rectangle would.
+
+Inside, there's a system Baker and his colleagues developed called the buttressed core. In the centre is a strong hexagonal concrete core. Each of the three wings acts as a buttress, propping it up.
+
+Baker has a lovely way to explain it: picture someone holding an umbrella and leaning into the wind. Their front leg is the core. Their back leg is the buttress. Each wing supports the others — so whichever direction the wind comes from, at least one wing is bracing the centre.
+
+And here's what I love as an engineer: it's built from conventional materials and conventional construction methods. No exotic alloys. The genius is in the geometry.
+
+Now the clever part. Remember those alternating vortices? They only become dangerous when they organise — when they peel off in a steady rhythm along the whole height of the building.
+
+The Burj steps back as it rises. The wings get shorter in a spiral pattern, so the shape of the building keeps changing as you go up. At each height, the wind meets a slightly different cross-section, so the vortices can't all line up into one rhythm.
+
+The designers' phrase for this is "confuse the wind." The tower's orientation was even chosen to reduce the most problematic airflow on the site.
+
+They tested all of this in wind tunnels and reshaped the tower based on what they found.
+
+And here's a twist I didn't expect when I first read about it. The tower wasn't originally meant to be this tall. An early design was around 518 metres. But as the engineers refined the shape for wind, they realised they could go taller while actually reducing wind forces and cost.
+
+The result is what Baker calls a very quiet building — he says it moves much less than many buildings half its height. It beat the previous record holder, Taipei 101, by more than 60 percent.
+
+The Y works for people, too. Three wings mean more windows and more views, which matters for apartments. And with three wings and six faces, only about one-sixth of the building faces the sun at any given time, which helps keep it cooler.
+
+So next time you see a picture of the Burj Khalifa, don't look up. Look down at its footprint. That Y is the whole trick: a core, three buttresses, and a shape that keeps changing so the wind never finds its rhythm.
+
+Next on Load Path: how a jet engine turns fuel into thrust. Subscribe if you want engineering explained by an engineer.

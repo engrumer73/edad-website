@@ -1,0 +1,39 @@
+Every time your phone decides what to show you next, someone calls it "the algorithm." Funny thing is, that word is a person. A real man, who lived in Baghdad more than eleven hundred years ago. And most people who say his name every day have never heard of him.
+
+His name was Muhammad ibn Musa al-Khwarizmi. Let's talk about who he was — and how his name ended up in your pocket.
+
+We don't know much about his early life. He was born around 780 and died around 850, and his name tells us where his family came from: Khwarazm, a region in Central Asia. Some scholars think he may actually have come from a small town near Baghdad. Either way, Baghdad is where his story happens.
+
+And here's something you should know up front. There is no portrait of al-Khwarizmi. None survives. When the Soviet Union put him on a postage stamp in 1983, for his 1,200th birthday, the face was imagined. So if you ever see "his picture" online — that's an artist's guess.
+
+Now, Baghdad in the early 800s. The Abbasid caliph al-Ma'mun was a scholar himself. Under him, a place called Bayt al-Hikmah — the House of Wisdom — became a centre for collecting books from across the empire and beyond, translating them into Arabic, and publishing new research. Greek mathematics, Indian numerals, Persian astronomy, all landing on the same desks.
+
+One of al-Khwarizmi's colleagues, al-Hajjaj, had already translated Euclid's Elements into Arabic. That's the kind of room he was working in.
+
+Around the year 830, al-Ma'mun encouraged al-Khwarizmi to write a book on calculation. The book he wrote has a long title — al-Kitab al-mukhtasar fi hisab al-jabr wal-muqabala. "The Compendious Book on Calculation by Completion and Balancing."
+
+Hear that word in the middle? Al-jabr. Completion. Restoring something to make it whole. When the book was translated into Latin in the 12th century, that word came along with it — and it became "algebra."
+
+So before we even get to algorithms: the word algebra is also his.
+
+What was actually in the book? Practical problems. Inheritance. Trade. Measuring land. And a method every school student still learns: solving quadratic equations by "completing the square." He didn't just give rules — he gave geometric proofs, drawn as squares and rectangles, to show why the rules work.
+
+His most famous example goes like this, and I love that he wrote it in words, not symbols: "a square and ten roots equal thirty-nine." Today we'd write x squared plus ten x equals thirty-nine.
+
+Picture a square with side x. Add ten x as two strips, five wide each, on two sides. You've got an L shape worth thirty-nine. The corner that's missing is five by five — twenty-five. Fill it in, and you've got a perfect big square worth sixty-four. Its side is eight. Take away the five, and x is three.
+
+That's it. That's "completion." Twelve centuries old, and still on exam papers.
+
+One more thing about that book. It opens with a dedication full of praise for God and the Prophet, peace be upon him. Historians point to that pious preface as evidence of his faith. For him, careful counting was not separate from belief.
+
+Now, the word algorithm. That comes from a different book — one on arithmetic with the Indian numerals, the 1, 2, 3 system we use today. Here's the twist: the Arabic original is lost. It survives only in a Latin translation, which begins with the words Algoritmi de numero Indorum — roughly, "Al-Khwarizmi on the Hindu art of reckoning."
+
+Algoritmi. That's his name, in Latin. Over time, European scholars used "algorism" for calculating with these numerals, and eventually "algorithm" came to mean any step-by-step procedure.
+
+And it's not just English. In Spanish, guarismo means a digit. In Portuguese, algarismo. Both come from his name too.
+
+It would be easy to think of him as just a mathematician. He wasn't. His Arabic-language works on astronomy and geography were hugely influential too. He was a scholar of the whole sky and the whole map, not only the page of numbers — which is exactly what the House of Wisdom was built to produce.
+
+So think about that. A man in 9th-century Baghdad, working in a house of books, writing about inheritance shares and land — and today his name is attached to the code that recommends your videos and the maths your kids do for homework.
+
+The House of Wisdom gave the world a lot more than one mathematician. We'll go inside it soon — who worked there, what they translated, and what happened to it. If you want to follow the golden thread of Islamic history with us, subscribe, and tell me in the comments: which scholar should we cover next?
